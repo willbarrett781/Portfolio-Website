@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+main{
+    height: 100dvh;
+    width:100%;
+    background-image: url(enter.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center
+    /*background-color: blue;*/
+    /*border: red solid 3px;*/
+}
+
+.text{
+    /*border: black dotted 1px;*/
+    /*top:34%;
+    left: 40%;*/
+    margin-right: 5.1rem;
+    width:fit-content;
+    padding: 2rem;
+    text-align: center;
+    /*border: black solid 1px;*/
+    
+}
+.text a{
+    font-family: "Righteous", sans-serif;
+    font-size:2rem;
+    color: #61188E;
+    text-decoration: none;
+    text-align: center;
+    /*border:red solid 1px;*/
+}
+
+.text a:hover{
+    font-size: 3rem;
+    color: #8B3FBA;
+}
