@@ -23,8 +23,9 @@ nav{
     align-content: center;
     margin-right:2rem;
 }
-h2{
-  /*  border: 1px solid yellow;*/
+nav h2{
+  margin-left:3rem;
+
 }
 .mywork{
     /*border: 1px solid green;*/
@@ -48,7 +49,125 @@ h2{
 h1{
     color: white;
     font-size: 5rem;
-    height:fit-content;
     margin-top: 10rem;
     /*border:1px white solid;*/
+}
+
+.projects{
+    height: 100dvh;
+    background-image: url(projects.jpg);
+    background-size: 100%, 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects h2{
+    color: white;
+    font-size: 5rem;
+    margin-top: 10rem;
+    width:100%;
+    text-align: center;
+    line-height: 1em;
+    height:1em;
+}
+
+.portfolio{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    /*border: purple 2px solid;*/
+    width: 50%;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+.project-1{
+    background-image: url(folk-club.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+    /*border: 1px red solid;*/
+}
+.project-1 .cover{
+    background-color: rgba(0,0,0,.4);
+    height:100%;
+    width:100%;
+    /*border: 1px yellow solid;*/
+    position: relative;
+    margin-top: -21.5px;
+    display: none;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+.cover p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.project-1 a:hover{
+    text-decoration: none;
+}
+.project-2{
+    background-image: url(camp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.project-3{
+    background-image: url(candy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.project-4{
+    background-image: url(igloo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.project-5{
+    background-image: url(panda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+/*
+*{
+    border: 1px yellow solid;
+}*/
+
+.portfolio h3{
+    text-align: center;
+    margin-top: 0;
+    background-color: rgba(255,255,255, .5);
+   /* border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;*/
+    margin-bottom:0;
+}
+.project-1 h3{
+    overflow: hidden;
+}
+.portfolio img{
+    width: 80%;
+    position: relative;
+    left: 10%;
 }
