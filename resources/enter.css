@@ -35,21 +35,26 @@ body{
     height: 25dvh;
     display:none;
     background-image: url(enter.jpg);
-    background-color: #61188E;
 }
 
-@media only screen and (max-width:940px){
+@media only screen and (max-width:1000px){
     .text a{
         font-size: 1.5rem;
     }
+    .text a:hover{
+        font-size: 1.7rem;
+    }
 }
-@media only screen and (max-width:734px){
+@media only screen and (max-width: 734px){
     .text a{
         font-size: 1rem;
         
     }
+    .text a:hover{
+        font-size: 1.3rem;
+    }
     .text{
-        margin-left:3rem;
+        margin-left: 3rem;
     }
 }
 
@@ -60,4 +65,6 @@ body{
     .banner{
         height: 50dvh;
     }
+
+    
 }
