@@ -101,7 +101,6 @@ h1{
     background-color: rgba(0,0,0,.4);
     height:100%;
     width:100%;
-    /*position: fixed;*/
     margin-top: -21.5px;
     display: none;
     align-items: center;
@@ -111,7 +110,6 @@ h1{
 .cover p{
     margin-left: 1rem;
     margin-right: 1rem;
-    /*display: none;*/
 }
 .project-1 a:hover{
     text-decoration: none;
@@ -156,8 +154,6 @@ h1{
     font-size: 5rem;
     color: white;
     text-align: center;
-    /*border: blue 1px solid;*/
-
 }
 .icons{
     display: flex;
