@@ -12,7 +12,6 @@ function removeCover(event){
 }
 
 
-headingWords.addEventListener('pointerdown',testPointer);
 project1.addEventListener('mouseover', addCover);
 project1.addEventListener('mouseout',removeCover);
 project1.addEventListener('pointerdown', addCover);
