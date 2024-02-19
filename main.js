@@ -11,16 +11,12 @@ function removeCover(event){
     projectCover.style.display = 'none';
 }
 
-let headingWords = document.querySelector('h1');
-function testPointer(event){
-    console.log('pointerDown');
-    headingWords.style.color = 'black';
-}
+
 headingWords.addEventListener('pointerdown',testPointer);
 project1.addEventListener('mouseover', addCover);
 project1.addEventListener('mouseout',removeCover);
 project1.addEventListener('pointerdown', addCover);
-/*project1.addEventListener('pointer', removeCover);*/
+project1.addEventListener('pointercancel', removeCover);
 console.log("test");
 let smallScreen = window.matchMedia("(max-width:1062px)");
 let smallerScreen = window.matchMedia("(max-width:713px)");
