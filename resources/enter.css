@@ -48,7 +48,6 @@ body{
 @media only screen and (max-width: 734px){
     .text a{
         font-size: 1rem;
-        
     }
     .text a:hover{
         font-size: 1.3rem;
@@ -65,6 +64,22 @@ body{
     .banner{
         height: 50dvh;
     }
+}
 
-    
+@media only screen and (max-width: 450px){
+    .text a{
+        font-size: .75rem;
+    }
+    .text a:hover{
+        font-size: .95rem;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .text a{
+        font-size: .6rem;
+    }
+    .text a:hover{
+        font-size: .8rem;
+    }
 }
