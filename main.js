@@ -13,6 +13,8 @@ function removeCover(event){
 
 project1.addEventListener('mouseover', addCover);
 project1.addEventListener('mouseout',removeCover);
+project1.addEventListener('touchstart', addCover);
+project1.addEventListener('touchend', removeCover);
 console.log("test");
 let smallScreen = window.matchMedia("(max-width:1062px)");
 let smallerScreen = window.matchMedia("(max-width:713px)");
