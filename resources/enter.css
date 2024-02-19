@@ -10,20 +10,13 @@ main{
     align-content: center;
     align-items: center;
     justify-content: center
-    /*background-color: blue;*/
-    /*border: red solid 3px;*/
 }
 
 .text{
-    /*border: black dotted 1px;*/
-    /*top:34%;
-    left: 40%;*/
     margin-right: 5.1rem;
     width:fit-content;
     padding: 2rem;
     text-align: center;
-    /*border: black solid 1px;*/
-    
 }
 .text a{
     font-family: "Righteous", sans-serif;
@@ -31,10 +24,24 @@ main{
     color: #61188E;
     text-decoration: none;
     text-align: center;
-    /*border:red solid 1px;*/
 }
 
 .text a:hover{
     font-size: 3rem;
     color: #8B3FBA;
+}
+
+@media only screen and (max-width:940px){
+    .text a{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:734px){
+    .text a{
+        font-size: 1rem;
+        
+    }
+    .text{
+        margin-left:3rem;
+    }
 }

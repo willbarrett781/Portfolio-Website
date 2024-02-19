@@ -2,6 +2,11 @@ body{
     margin:0;
 }
 
+*{
+    box-sizing: border-box;
+    /*border: solid red 1px;*/
+}
+
 header{
     background-color:rgba(255,255,255, .5);
     width: 80%;
@@ -14,23 +19,20 @@ header{
 nav{
     display:flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin-right:2rem;
 }
 
 nav a{
-  /*margin-left:3rem;*/
 color: black;
 text-decoration: none;
 }
 
 .nav-mywork{
     margin-left:2rem;
-    margin-top: 1.3rem;
 }
 
 .nav-contact{
-    margin-top: 1.3rem;
 }
 
 #banner{
@@ -52,17 +54,16 @@ h1{
 #projects{
     height: 100dvh;
     background-image: url(projects.jpg);
-    background-size: 100%, 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width:100%;
+    padding-top: 8rem;
+    background-color: blue;
 }
 
 #projects h2{
     color: white;
     font-size: 5rem;
-    margin-top: 10rem;
     width:100%;
     text-align: center;
     line-height: 1em;
@@ -73,16 +74,17 @@ h1{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 33%;
-    width: 50%;
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
     align-items: center;
     overflow-x: scroll;
     overflow-y:hidden;
-    margin-top: -10rem;
-    margin-bottom: 5rem;
+
     gap: 2rem;
+    /*border: purple 1px solid;*/
 }
-.project-1{
-    background-image: url(folk-club.jpg);
+.project{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,11 +92,16 @@ h1{
     border-radius: 10%;
     overflow: hidden;
 }
-.project-1 .cover{
+
+.project-1{
+    background-image: url(folk-club.jpg);
+    
+}
+.cover{
     background-color: rgba(0,0,0,.4);
     height:100%;
     width:100%;
-    position: relative;
+    /*position: fixed;*/
     margin-top: -21.5px;
     display: none;
     align-items: center;
@@ -104,45 +111,22 @@ h1{
 .cover p{
     margin-left: 1rem;
     margin-right: 1rem;
+    /*display: none;*/
 }
 .project-1 a:hover{
     text-decoration: none;
 }
 .project-2{
     background-image: url(camp.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    border-radius: 10%;
-    overflow: hidden;
 }
 .project-3{
     background-image: url(candy.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    border-radius: 10%;
-    overflow: hidden;
 }
 .project-4{
     background-image: url(igloo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    border-radius: 10%;
-    overflow: hidden;
 }
 .project-5{
     background-image: url(panda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    border-radius: 10%;
-    overflow: hidden;
 }
 
 .portfolio h3{
@@ -152,11 +136,6 @@ h1{
     margin-bottom:0;
 }
 
-.portfolio img{
-    width: 80%;
-    position: relative;
-    left: 10%;
-}
 
 #contact{
     background-image: url(contact.jpg);
@@ -164,22 +143,112 @@ h1{
     height: 100dvh;
     width: 100%;
     background-repeat: no-repeat;
-    /*display: block;*/
 }
 
 
 .social {
-    padding: 15px;
-    /*margin: 5px;*/
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
+    display:grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    margin-top: 3rem;
+}
+.fab{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    /*border: blue 1px solid;*/
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.email{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    align-self: end;
+    background-color: rgba(112, 128, 144,.5);
+    width: fit-content;
+    padding:1rem;
 }
 
   #contact h2{
     color: white;
     font-size: 5rem;
-    margin-top: 10rem;
     width:100%;
     text-align: center;
+    padding-top: 10rem;
+    margin:0;
+  }
+
+  @media only screen and (max-width: 1062px){
+    .cover{
+        margin-top:-43px;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    h1{
+        width: 30rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .portfolio{
+        height:30%;
+        margin-top: 6rem;
+    }
+
+    .projects h2{
+    }
+  }
+
+  @media only screen and (max-width: 650px){
+    h1{
+        font-size: 3rem;
+        width: 18rem;
+    }
+    nav h2{
+        font-size: 1rem ;
+    }
+    nav h3{
+        font-size: .8rem;
+    }
+
+    #projects{
+        padding-top: 3rem;
+    }
+
+    #projects h2{
+        font-size: 2.5rem;
+    }
+
+    #contact h2{
+        font-size: 3rem;
+    }
+    .fab{
+        font-size: 3rem;
+    }
+    .email{
+        font-size: 1rem;
+    }
+
+    .portfolio{
+        grid-auto-flow: row;
+        grid-auto-rows: 75%;
+        height: 80%;
+        grid-template-columns: 85%;
+        overflow: scroll;
+        margin-top:2rem;
+        justify-content: center;
+        width: 90%;
+    }
+    
+  }
+
+  @media only screen and (max-width:990px){
+   
   }
