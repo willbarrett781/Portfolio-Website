@@ -1,7 +1,7 @@
 body{
     margin: 0;
 }
-main{
+.banner{
     height: 100dvh;
     width:100%;
     background-image: url(enter.jpg);
@@ -31,6 +31,13 @@ main{
     color: #8B3FBA;
 }
 
+.block{
+    height: 25dvh;
+    display:none;
+    background-image: url(enter.jpg);
+    background-color: #61188E;
+}
+
 @media only screen and (max-width:940px){
     .text a{
         font-size: 1.5rem;
@@ -43,5 +50,14 @@ main{
     }
     .text{
         margin-left:3rem;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .block{
+        display: block;
+    }
+    .banner{
+        height: 50dvh;
     }
 }
