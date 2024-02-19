@@ -1,7 +1,8 @@
-
+//create element variables
 let projectCover = document.querySelector('.cover');
 let project1 = document.querySelector('.project-1');
 
+//Add and remove cover methods
 function addCover(event){
 projectCover.style.display = 'flex';
 projectCover.style.height = '110%';
@@ -11,12 +12,13 @@ function removeCover(event){
     projectCover.style.display = 'none';
 }
 
-
+//add event listeners
 project1.addEventListener('mouseover', addCover);
 project1.addEventListener('mouseout',removeCover);
 project1.addEventListener('pointerdown', addCover);
 project1.addEventListener('pointercancel', removeCover);
-console.log("test");
+
+//create screen size variables
 let smallScreen = window.matchMedia("(max-width:1062px)");
 let smallerScreen = window.matchMedia("(max-width:713px)");
 
@@ -35,7 +37,6 @@ if(smallScreen.matches){
     project3Header.innerHTML = 'Project<br>3';
     project4Header.innerHTML = 'Project<br>4';
     project5Header.innerHTML = 'Project<br>5';
-    
 }
 
 
@@ -57,5 +58,3 @@ smallScreen.onchange = (e) => {
     }
 }
 
-//projectHeader.innerHTML = 'Indie Folk<br>Music Club';
-//window.addEventListener('resize', addLineBreak);
