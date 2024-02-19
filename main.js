@@ -4,7 +4,7 @@ let project1 = document.querySelector('.project-1');
 
 function addCover(event){
 projectCover.style.display = 'flex';
-projectCover.style.height = project1.height;
+projectCover.style.height = '110%';
 }
 
 function removeCover(event){
